@@ -2,7 +2,7 @@ export default {
   isRequestProxy: true,
   development: {
     // 开发环境接口请求
-    host: 'https://service-exndqyuk-1257786608.gz.apigw.tencentcs.com',
+    host: 'http://localhost:40000',
     // 开发环境 cdn 路径
     cdn: '',
   },

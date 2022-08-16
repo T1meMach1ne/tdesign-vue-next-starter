@@ -91,7 +91,7 @@ const userStore = useUserStore();
 const INITIAL_DATA = {
   phone: '',
   account: 'admin',
-  password: 'admin',
+  password: '123456',
   verifyCode: '',
   checked: false,
 };
@@ -131,6 +131,7 @@ const sendCode = () => {
 const onSubmit = async ({ validateResult }) => {
   if (validateResult === true) {
     try {
+      debugger
       await userStore.login(formData.value);
 
       MessagePlugin.success('登陆成功');

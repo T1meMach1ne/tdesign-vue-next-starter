@@ -18,8 +18,12 @@ export interface RequestOptions {
 }
 
 export interface Result<T = any> {
-  code: number;
+  timestamp: number;
+  statusCode: string;
+  succeeded: boolean;
   data: T;
+  message: string;
+  extras: T;
 }
 
 export interface AxiosRequestConfigRetry extends AxiosRequestConfig {
